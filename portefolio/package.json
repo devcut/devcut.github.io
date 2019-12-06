@@ -1,5 +1,24 @@
 {
   "devDependencies": {
-    "mustache": "^3.1.0"
-  }
+    "@babel/core": "^7.7.5",
+    "@babel/preset-env": "^7.7.5",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-babel": "^8.0.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-uglify": "^3.0.2",
+    "jquery": "^3.4.1",
+    "mustache": "^3.1.0",
+    "node-sass": "^4.13.0"
+  },
+  "scripts": {
+    "build": "mustache -p templates/partials/header.mustache data/data.json templates/index.mustache > index.html"
+  },
+  "name": "portefolio",
+  "version": "1.0.0",
+  "author": "Guillaume E <guillaume.egloff@gmail.com>",
+  "license": "UNLICENSED",
+  "browserslist": [
+    ">1%"
+  ]
 }
