@@ -1,17 +1,19 @@
 <header>
-    <h1>Je m'apelle Guillaume & je suis intégrateur web et développeur Symfony.</h1>
-    <ul class="list-icon">
-        <li>
-            <a href="#">Linkedin</a>
-        </li>
-        <li>
-            <a href="#">Email</a>
-        </li>
-        <li>
-            <a href="#">Téléphone</a>
-        </li>
-        <li>
-            <a href="#">Cv</a>
-        </li>
-    </ul>
+    <div class="wrapper">
+        {{!<div class="text-center">
+            <span class="hand-icon">👋</span>
+            <h1>Je m'appelle <span class="primary">Guillaume</span>, intégrateur web et développeur Symfony.</h1>
+        </div>}}
+        <ul class="list-icon">
+            {{#socialMedia}}
+                {{#enabled}}
+                    <li>
+                        <a target="_blank" href="{{link}}">
+                            <i class="{{icon}}"></i>
+                        </a>
+                    </li>
+                {{/enabled}}
+            {{/socialMedia}}
+        </ul>
+    </div>
 </header>

@@ -1,10 +1,29 @@
 {
-  "names": [
+  "socialMedia": [
     {
-      "name": "Toto"
+      "icon": "fab fa-linkedin-in",
+      "link": "https://www.linkedin.com/in/guillaume-egloff-a71ab7105/",
+      "enabled": true
     },
     {
-      "name": "Tata"
+      "icon": "fas fa-envelope",
+      "link": "mailto:guillaume.egloff@gmail.com",
+      "enabled": true
+    },
+    {
+      "icon": "fas fa-phone",
+      "link": "+33695191829",
+      "enabled": true
+    },
+    {
+      "icon": "fab fa-github",
+      "link": "https://github.com/devcut",
+      "enabled": true
+    },
+    {
+      "icon": "fas fa-user-tie",
+      "link": "https://github.com/devcut",
+      "enabled": true
     }
   ]
 }

@@ -6,12 +6,15 @@
     "gulp-autoprefixer": "^7.0.1",
     "gulp-babel": "^8.0.0",
     "gulp-sass": "^4.0.2",
+    "gulp-shell": "^0.7.1",
     "gulp-uglify": "^3.0.2",
     "jquery": "^3.4.1",
     "mustache": "^3.1.0",
     "node-sass": "^4.13.0"
   },
   "scripts": {
+    "dev": "gulp sass && gulp js",
+    "watch": "gulp watch",
     "build": "mustache -p templates/partials/header.mustache data/data.json templates/index.mustache > index.html"
   },
   "name": "portefolio",

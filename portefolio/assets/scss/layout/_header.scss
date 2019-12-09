@@ -1,0 +1,69 @@
+header {
+
+  .hand-icon {
+    display: block;
+    font-size: 48px;
+    line-height: 1;
+    animation: rotate 4s ease infinite;
+  }
+
+  @keyframes rotate {
+    0%, 25% {
+      transform: rotate(0);
+    }
+    5%, 15% {
+      transform: rotate(15deg);
+    }
+    10%, 20% {
+      transform: rotate(-15deg);
+    }
+    100% {
+      transform: rotate(0);
+    }
+  }
+
+  .list-icon {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-size: 25px;
+    line-height: 1;
+    margin: 50px -10px -10px -10px;
+
+    & > li {
+      margin: 10px;
+      
+      & > a {
+        position: relative;
+        z-index: 1;
+        display: block;
+        color: white;
+        padding: 17px 19px;
+        transition: transform $duration ease, color $duration ease;
+
+        &:after {
+          content: '';
+          position: absolute;
+          z-index: -1;
+          left: 0;
+          top: 0;
+          bottom: 0;
+          right: 0;
+          background-color: $color-primary;
+          border-radius: 100%;
+          transition: transform $duration ease;
+        }
+
+        &:hover {
+          color: $color-primary;
+          transform: scale(1.6);
+          &:after {
+            transform: scale(0);
+          }
+        }
+      }
+    }
+  }
+
+}

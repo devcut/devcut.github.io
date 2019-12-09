@@ -1,9 +1,9 @@
 html {
   padding: $gutter;
-  background-color: white;
+  background-color: $color-primary;
 }
 
 body {
   padding: $gutter;
-  background-color: grey;
+  box-shadow: 0 0 20px 0 darken($color-primary, 15%);
 }

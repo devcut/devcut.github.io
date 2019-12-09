@@ -5,6 +5,7 @@ var sass = require('gulp-sass');
 var autoprefixer = require('gulp-autoprefixer');
 var babel = require('gulp-babel');
 var uglify = require('gulp-uglify');
+var shell = require('gulp-shell');
 
 sass.compiler = require('node-sass');
 
@@ -26,7 +27,10 @@ gulp.task('js', function() {
     .pipe(gulp.dest('public/js'));
 });
 
+gulp.task('mustache', shell.task('yarn build'));
+
 gulp.task('watch', function () {
   gulp.watch('assets/scss/**/*.scss', gulp.series('sass'));
   gulp.watch('assets/js/**/*.js', gulp.series('js'));
+  gulp.watch('templates/**/*.mustache', gulp.series('mustache'));
 });

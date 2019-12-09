@@ -31,7 +31,7 @@ $wrapper-size-large: 1250px;
 //  Colors
 //=====================================================
 // Categories
-$color-primary: #FF4848;
+$color-primary: #ffbf34;
 $color-secondary: #ff556c;
 $color-btn-dark: #494953;
 
@@ -48,7 +48,8 @@ $color-grey-dark: darken($color-grey, 15%);
 //  Fonts
 //=====================================================
 // Famillies
-$font-primary: 'Montserrat', sans-serif;
+$font-primary: 'Roboto', sans-serif;
+$font-title: 'Oswald', sans-serif;
 $font-icon: 'icon'; // npm script = npm run iconfont
 
 // Sizes
