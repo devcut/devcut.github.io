@@ -25,14 +25,14 @@ $ie: 'all and (-ms-high-contrast: none), (-ms-high-contrast: active)';
 $wrapper-size-small: 660px;
 $wrapper-size-medium: $screen-l;
 $wrapper-size: $screen-ml;
-$wrapper-size-large: 1250px;
+$wrapper-size-large: 1500px;
 
 //=====================================================
 //  Colors
 //=====================================================
 // Categories
-$color-primary: #ffbf34;
-$color-secondary: #ff556c;
+$color-primary: #3087ff;
+$color-secondary: #ffbf34;
 $color-btn-dark: #494953;
 
 // Basics
@@ -70,7 +70,7 @@ $font-weight-bold: 700;
 $font-weight-extra-bold: 900;
 
 $line-height-base: 1.5em;
-$headings-margin-bottom: 10px;
+$headings-margin-bottom: 30px;
 $paragraph-margin-bottom: 20px;
 
 // Links

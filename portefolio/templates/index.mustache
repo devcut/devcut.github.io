@@ -17,9 +17,31 @@
 <body>
     {{>header}}
 
-{{#names}}
-    <strong>{{name}}</strong>
-{{/names}}
+    <main role="main">
+        <div class="wrapper-large">
+            <h2>Mes réalisations</h2>
+
+            <ul class="list-project">
+                {{#projects}}
+                    {{#enabled}}
+                        <li>
+                            <a class="project" target="_blank" href="{{url}}">
+                                <div class="project-image" style="background-image: url('./public/images/{{image}}')"></div>
+                                <div class="project-content">
+                                    <h3>{{title}} <span>({{year}})</span></h3>
+                                    <ul class="list-tag">
+                                        {{#tags}}
+                                            <li>{{.}}</li>
+                                        {{/tags}}
+                                    </ul>
+                                </div>
+                            </a>
+                        </li>
+                    {{/enabled}}
+                {{/projects}}
+            </ul>
+        </div>
+    </main>
 
     {{! Javascript }}
     <script type="text/javascript" async src="./public/js/app.js"></script>

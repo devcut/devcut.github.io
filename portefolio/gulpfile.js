@@ -32,5 +32,5 @@ gulp.task('mustache', shell.task('yarn build'));
 gulp.task('watch', function () {
   gulp.watch('assets/scss/**/*.scss', gulp.series('sass'));
   gulp.watch('assets/js/**/*.js', gulp.series('js'));
-  gulp.watch('templates/**/*.mustache', gulp.series('mustache'));
+  gulp.watch(['templates/**/*.mustache', 'data/*.json'], gulp.series('mustache'));
 });

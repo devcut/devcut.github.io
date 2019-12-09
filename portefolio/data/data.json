@@ -25,5 +25,95 @@
       "link": "https://github.com/devcut",
       "enabled": true
     }
+  ],
+  "projects": [
+    {
+      "title": "Sally",
+      "image": "sally.png",
+      "tags": ["Intégration", "Développement Symfony"],
+      "url": "https://chant-jazz.lu/",
+      "year": "2019",
+      "enabled": true
+    },
+    {
+      "title": "REO",
+      "image": "reo.png",
+      "tags": ["Intégration", "Développement Symfony"],
+      "url": "https://reo.lu/",
+      "year": "2019",
+      "enabled": true
+    },
+    {
+      "title": "Les tendances et vous",
+      "image": "les-tendances-et-vous.png",
+      "tags": ["Intégration", "Développement Symfony"],
+      "url": "https://www.lestendancesetvous.fr/",
+      "year": "2019",
+      "enabled": true
+    },
+    {
+      "title": "Groupe saint christophe",
+      "image": "groupe-saint-christophe.png",
+      "tags": ["Intégration", "Développement Symfony"],
+      "url": "http://www.groupe-saintchristophe-lorraine.com/",
+      "year": "2019",
+      "enabled": true
+    },
+    {
+      "title": "Krav maga Luxembourg",
+      "image": "krav-maga-luxemborg.png",
+      "tags": ["Intégration", "Développement Symfony"],
+      "url": "https://www.kravmagaluxembourg.com/",
+      "year": "2019",
+      "enabled": true
+    },
+    {
+      "title": "Inter entreprises services",
+      "image": "ies.png",
+      "tags": ["Intégration", "Développement Symfony"],
+      "url": "https://inter-entreprises-services.fr/",
+      "year": "2019",
+      "enabled": true
+    },
+    {
+      "title": "Airstrip",
+      "image": "airstrip.png",
+      "tags": ["Intégration"],
+      "url": "http://airstrip.events/",
+      "year": "2019",
+      "enabled": true
+    },
+    {
+      "title": "GST",
+      "image": "gst.png",
+      "tags": ["Développement Symfony"],
+      "url": "https://www.gstparis.fr/",
+      "year": "2018",
+      "enabled": true
+    },
+    {
+      "title": "Spectacle Rémi Larrousse",
+      "image": "remi-larrousse.png",
+      "tags": ["Intégration", "Développement Symfony"],
+      "url": "https://spectacle.remilarrousse.fr/",
+      "year": "2018",
+      "enabled": true
+    },
+    {
+      "title": "Krav maga Thionville",
+      "image": "kmtc57.png",
+      "tags": ["Intégration"],
+      "url": "https://kmct57.com/",
+      "year": "2018",
+      "enabled": true
+    },
+    {
+      "title": "Circuit chenevières",
+      "image": "circuit-chenevières.png",
+      "tags": ["Intégration"],
+      "url": "https://www.circuit-chenevieres.fr/",
+      "year": "2018",
+      "enabled": true
+    }
   ]
 }

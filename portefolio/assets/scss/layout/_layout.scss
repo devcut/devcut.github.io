@@ -4,6 +4,12 @@ html {
 }
 
 body {
-  padding: $gutter;
+  padding: $gutter 0;
   box-shadow: 0 0 20px 0 darken($color-primary, 15%);
+}
+
+main {
+  position: relative;
+  z-index: 1;
+
 }
