@@ -123,6 +123,9 @@ $breakpoints: (('s', $screen-s), ('m', $screen-m), ('l', $screen-l));
 .wrapper-small {
   @include wrapper($wrapper-size-small, "0 auto", ($gutter), 0);
 }
+.wrapper-small-no-pad {
+  @include wrapper($wrapper-size-small, "0 0 50px 0", 0, 0);
+}
 .wrapper-medium {
   @include wrapper($wrapper-size-medium, "0 auto", ($gutter), 0);
 }
