@@ -3,8 +3,6 @@
 var gulp = require('gulp');
 var sass = require('gulp-sass');
 var autoprefixer = require('gulp-autoprefixer');
-var babel = require('gulp-babel');
-var uglify = require('gulp-uglify');
 var shell = require('gulp-shell');
 
 sass.compiler = require('node-sass');
@@ -16,21 +14,9 @@ gulp.task('sass', function () {
     .pipe(gulp.dest('public/css'));
 });
 
-gulp.task('js', function() {
-  return gulp.src('assets/js/*.js')
-    .pipe(babel({
-      presets: ['@babel/preset-env']
-    }))
-    .pipe(uglify().on('error', function(e){
-      console.dir(e);
-    }))
-    .pipe(gulp.dest('public/js'));
-});
-
 gulp.task('mustache', shell.task('yarn build'));
 
 gulp.task('watch', function () {
   gulp.watch('assets/scss/**/*.scss', gulp.series('sass'));
-  gulp.watch('assets/js/**/*.js', gulp.series('js'));
   gulp.watch(['templates/**/*.mustache', 'data/*.json'], gulp.series('mustache'));
 });
