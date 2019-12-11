@@ -16,11 +16,10 @@ h2 {
 }
 
 h3 {
-  font-size: 30px;
-  letter-spacing: 1.05px;
+  font-size: calc(1vw + 17px);
   margin-bottom: 10px;
 
   span {
-    font-size: 20px;
+    font-size: 15px;
   }
 }

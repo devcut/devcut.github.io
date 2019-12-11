@@ -31,52 +31,71 @@
 .project {
   position: relative;
   display: block;
-  height: 420px;
   color: white;
-  overflow: hidden;
-  box-shadow: 0 10px 25px 0 rgba($color-primary, .4);
-  transition: all $duration ease;
+
+  &:after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    right: 0;
+    top: $gutter;
+    height: calc(350px - #{$gutter});
+    background-color: rgba($color-primary, .6);
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+
+    @media screen and (max-width: $screen-m) {
+      height: calc(200px - #{$gutter});
+    }
+  }
 
   &:hover {
-    box-shadow: 0 0 15px 0 rgba($color-primary, .7);
-    &:after {
-      transform: scaleY(1.6);
-    }
     .project-image {
       transform: scale(1);
     }
-    .project-content {
-      right: 0;
+
+    .project-image-container {
+      box-shadow: 0 0 20px 0 $color-primary;
     }
   }
 }
 
-.project-image {
-  position: absolute;
-  left: 0;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  background-position: center;
-  background-size: cover;
-  transform: scale(1.15);
-  transition: transform $duration ease;
+.project-image-container {
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  border-radius: 5px;
+  height: 350px;
+  width: calc(100% - #{$gutter});
+  box-shadow: 0 10px 30px 0 rgba($color-primary, .7);
+  transition: box-shadow $duration ease;
+
+  @media screen and (max-width: $screen-m) {
+    height: 200px;
+  }
+
+  .project-image {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background-position: center;
+    background-size: cover;
+    transform: scale(1.1);
+    transition: transform $duration ease;
+  }
 }
 
 .project-content {
-  position: absolute;
-  z-index: 1;
-  bottom: 0;
-  left: 0;
-  right: 30%;
-  padding: $gutter/1.5 $gutter;
-  background-color: $color-primary;
-  transition: right $duration ease;
-
-  @media screen and (max-width: $screen-ml) {
-    right: 0;
-  }
+  background-color: rgba($color-primary, .6);
+  margin-left: $gutter;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  padding: $gutter/2 $gutter;
 }
+
 
 .list-tag {
   display: flex;
@@ -84,11 +103,12 @@
   flex-wrap: wrap;
   font-size: 13px;
   margin: -5px;
+  color: white;
 
   & > li {
     padding: 2px 10px;
     background-color: darken($color-primary, 7%);
-    border-radius: 50px;
+    border-radius: 5px;
     margin: 5px;
   }
 }

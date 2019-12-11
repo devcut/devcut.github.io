@@ -30,7 +30,10 @@
                     {{#enabled}}
                         <li>
                             <a class="project" target="_blank" href="{{url}}">
-                                <div class="project-image" style="background-image: url('./public/images/{{image}}')"></div>
+                                <div class="project-image-container">
+                                    <div class="project-image" style="background-image: url('./public/images/{{image}}')"></div>
+                                </div>
+
                                 <div class="project-content">
                                     <h3>{{title}} <span>({{year}})</span></h3>
                                     <ul class="list-tag">
