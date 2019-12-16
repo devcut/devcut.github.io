@@ -13,7 +13,7 @@
     "build": "mustache -p templates/partials/header.mustache data/data.json templates/index.mustache > index.html"
   },
   "name": "portefolio",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "Guillaume E <guillaume.egloff@gmail.com>",
   "license": "UNLICENSED",
   "browserslist": [
