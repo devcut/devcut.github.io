@@ -11,11 +11,6 @@
       "enabled": true
     },
     {
-      "icon": "fas fa-phone",
-      "link": "+33695191829",
-      "enabled": true
-    },
-    {
       "icon": "fab fa-github",
       "link": "https://github.com/devcut",
       "enabled": true
