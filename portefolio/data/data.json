@@ -16,12 +16,25 @@
       "enabled": true
     },
     {
+      "icon": "fas fa-code-branch",
+      "link": "https://github.com/fluffy-factory",
+      "enabled": true
+    },
+    {
       "icon": "fas fa-user-tie",
       "link": "./public/CV-Egloff-Guillaume.pdf",
       "enabled": true
     }
   ],
   "projects": [
+    {
+      "title": "Chapier tools",
+      "image": "tools.png",
+      "tags": ["Intégration", "Développement Symfony", "API"],
+      "url": "#",
+      "year": "2020",
+      "enabled": true
+    },
     {
       "title": "Sally",
       "image": "sally.png",
