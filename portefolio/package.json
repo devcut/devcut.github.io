@@ -5,7 +5,7 @@
     "gulp-sass": "^4.0.2",
     "gulp-shell": "^0.7.1",
     "mustache": "^3.1.0",
-    "node-sass": "^4.13.0"
+    "node-sass": "^4.13.1"
   },
   "scripts": {
     "dev": "gulp sass && gulp js",
