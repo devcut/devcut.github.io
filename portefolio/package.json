@@ -1,22 +1,29 @@
 {
   "devDependencies": {
-    "gulp": "^4.0.2",
-    "gulp-autoprefixer": "^7.0.1",
-    "gulp-sass": "^4.0.2",
-    "gulp-shell": "^0.7.1",
+    "@babel/core": "^7.14.8",
+    "@babel/preset-env": "^7.14.9",
     "mustache": "^3.1.0",
-    "node-sass": "^4.13.1"
+    "node-sass": "^4.13.1",
+    "rollup": "^2.55.1",
+    "rollup-plugin-babel": "^4.4.0",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-scss": "^3.0.0",
+    "rollup-plugin-terser": "^7.0.2"
   },
   "scripts": {
-    "dev": "gulp sass && gulp js",
-    "watch": "gulp watch",
+    "prepare": "npm run build",
+    "rollup" : "rollup -c",
     "build": "mustache -p templates/partials/header.mustache data/data.json templates/index.mustache > index.html"
   },
-  "name": "portefolio",
+  "name": "portfolio",
   "version": "1.0.1",
   "author": "Guillaume E <guillaume.egloff@gmail.com>",
   "license": "UNLICENSED",
   "browserslist": [
     ">1%"
-  ]
+  ],
+  "dependencies": {
+    "interactive-board": "1.0.2"
+  }
 }

@@ -1,5 +1,12 @@
 header {
+  position: relative;
   margin-bottom: 40px;
+
+  .wrapper {
+    pointer-events: none;
+    padding-top: $gutter * 1.5;
+    padding-bottom: $gutter * 1.5;
+  }
 
   .hand-icon {
     display: block;
@@ -42,6 +49,7 @@ header {
         color: white;
         padding: 17px 19px;
         transition: transform $duration ease, color $duration ease;
+        pointer-events: all;
 
         &:after {
           content: '';
@@ -51,13 +59,13 @@ header {
           top: 0;
           bottom: 0;
           right: 0;
-          background-color: $color-primary;
+          background-color: $color-black-text;
           border-radius: 100%;
           transition: transform $duration ease;
         }
 
         &:hover {
-          color: $color-primary;
+          color: $color-black-text;
           transform: scale(1.6);
           &:after {
             transform: scale(0);
@@ -66,5 +74,4 @@ header {
       }
     }
   }
-
 }
