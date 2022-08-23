@@ -6,20 +6,23 @@
 @import "utils/helpers";
 
 //=====================================================
+//  Libraries
+//=====================================================
+@import "libraries/fontawesome";
+@import "jquery-modal/jquery.modal";
+@import "interactive-board/lib/interactive-board";
+@import "libraries/interactive-board";
+@import "libraries/jquery-modal";
+
+//=====================================================
 //  Components
 //=====================================================
 @import "components/typography";
 @import "components/project";
+@import "components/button";
 
 //=====================================================
 //  Layout
 //=====================================================
 @import "layout/header";
 @import "layout/layout";
-
-//=====================================================
-//  Libraries
-//=====================================================
-@import "libraries/fontawesome";
-@import "interactive-board/lib/interactive-board";
-@import "libraries/interactive-board";

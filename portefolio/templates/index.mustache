@@ -9,7 +9,7 @@
 
     {{! Fonts }}
     <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;600&display=swap" rel="stylesheet">
 
     {{! Styles }}
     <link rel="stylesheet" href="./public/css/app.css">
@@ -20,18 +20,18 @@
 
     <main role="main">
         <div class="wrapper-large">
-            <h2>Mes réalisations <span>(une partie)</span></h2>
+            <h2>Mes réalisations <span>(une partie seulement)</span></h2>
             <div class="wrapper-small-no-pad">
-                <p>Les projets que j'ai pu réaliser sont principalement des sites Internet pour d'autres entreprises. Néanmoins j'ai pu réaliser des API, des intranets et extranets. Mais ça je ne peux pas vous en parler ici 🤭.</p>
+                <p>Les projets que j'ai pu réaliser sont principalement des sites Internet pour d'autres entreprises. Néanmoins j'ai pu concevoir des API, des intranets et extranets. Mais ça je ne peux pas vous en parler ici 🤭.</p>
             </div>
 
             <ul class="list-project">
                 {{#projects}}
                     {{#enabled}}
                         <li>
-                            <a class="project" target="_blank" href="{{url}}">
+                            <div class="project">
                                 <div class="project-image-container">
-                                    <div class="project-image" style="background-image: url('./public/images/{{image}}')"></div>
+                                    <a href="{{url}}" target="_blank" class="project-image" style="background-image: url('./public/images/{{image}}')"></a>
                                 </div>
 
                                 <div class="project-content">
@@ -41,8 +41,17 @@
                                             <li>{{.}}</li>
                                         {{/tags}}
                                     </ul>
+                                    {{#preview}}
+                                        <p class="project-content-preview">{{{preview}}}</p>
+                                    {{/preview}}
+                                    {{#content}}
+                                        <div id="project-content-{{id}}" class="modal">
+                                            {{{content}}}
+                                        </div>
+                                        <a class="btn-primary open-modal" href="#project-content-{{id}}">En lire plus</a>
+                                    {{/content}}
                                 </div>
-                            </a>
+                            </div>
                         </li>
                     {{/enabled}}
                 {{/projects}}

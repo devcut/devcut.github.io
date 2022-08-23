@@ -49,16 +49,6 @@
       height: calc(200px - #{$gutter});
     }
   }
-
-  &:hover {
-    .project-image {
-      transform: scale(1);
-    }
-
-    .project-image-container {
-      box-shadow: 0 0 20px 0 $color-primary;
-    }
-  }
 }
 
 .project-image-container {
@@ -73,6 +63,9 @@
 
   @media screen and (max-width: $screen-m) {
     height: 200px;
+    &:after {
+      line-height: 200px;
+    }
   }
 
   .project-image {
@@ -86,6 +79,14 @@
     transform: scale(1.1);
     transition: transform $duration ease;
   }
+
+  &:hover {
+    .project-image {
+      transform: scale(1);
+    }
+
+    box-shadow: 0 0 20px 0 $color-primary;
+  }
 }
 
 .project-content {
@@ -96,6 +97,9 @@
   padding: $gutter/2 $gutter;
 }
 
+.project-content-preview {
+  margin-top: 15px;
+}
 
 .list-tag {
   display: flex;
