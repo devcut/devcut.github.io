@@ -31,18 +31,27 @@
       "id": 13,
       "title": "Chapier.lu",
       "image": "chapier.png",
-      "tags": ["Intégration", "Développement Symfony", "API", "Serveur"],
+      "tags": [
+        "Intégration",
+        "Développement Symfony",
+        "API",
+        "Serveur"
+      ],
       "url": "https://chapier.lu",
       "year": "2022",
       "preview": "Refonte du site internet <b>chapier.lu</b> avec une nouvelle charge graphique, basé sous Symfony avec l'ajout de nouvelles fonctionnalités.",
-      "content": "Contenu en cours de rédaction :)",
+      "content": "Refonte du site internet Chapier.lu qui était présent depuis plus de 12 ans, développé from scratch par le développeur me précédent.<br>Après réflexion et rédaction du cahier des charges, nous sommes parti sur Symfony avec l'utilisation du bundle EasyAdmin pour l'administration. Nous avons loué et configuré un serveur Linux basé au Luxembourg suite à la demande de nos clients.",
       "enabled": true
     },
     {
       "id": 12,
       "title": "Chapier tools",
       "image": "tools.png",
-      "tags": ["Intégration", "Développement Symfony", "API"],
+      "tags": [
+        "Intégration",
+        "Développement Symfony",
+        "API"
+      ],
       "url": "#",
       "year": "2020",
       "preview": "Création d'un outil d'analyse de données provenant de l'ERP PICK pour <b>les commerciaux</b>, <b>les assistants</b> et <b>la direction</b> de la société Chapier (ainsi que pour nous, les développeurs).",
@@ -52,7 +61,10 @@
       "id": 11,
       "title": "Sally",
       "image": "sally.png",
-      "tags": ["Intégration", "Développement Symfony"],
+      "tags": [
+        "Intégration",
+        "Développement Symfony"
+      ],
       "url": "https://chant-jazz.lu/",
       "year": "2019",
       "preview": "Création d'un site vitrine pour une professeure de chant.",
@@ -62,7 +74,10 @@
       "id": 10,
       "title": "REO",
       "image": "reo.png",
-      "tags": ["Intégration", "Développement Symfony"],
+      "tags": [
+        "Intégration",
+        "Développement Symfony"
+      ],
       "url": "https://reo.lu/",
       "year": "2019",
       "preview": "Création d'un site pour s'inscrire à des conférences réalisé par Telindus Luxembourg.",
@@ -72,7 +87,10 @@
       "id": 9,
       "title": "Les tendances et vous",
       "image": "les-tendances-et-vous.png",
-      "tags": ["Intégration", "Développement Symfony"],
+      "tags": [
+        "Intégration",
+        "Développement Symfony"
+      ],
       "url": "https://www.lestendancesetvous.fr/",
       "year": "2019",
       "preview": "Création d'un site de mode dirigé par le groupe E.leclerc.",
@@ -82,7 +100,10 @@
       "id": 8,
       "title": "Groupe saint christophe",
       "image": "groupe-saint-christophe.png",
-      "tags": ["Intégration", "Développement Symfony"],
+      "tags": [
+        "Intégration",
+        "Développement Symfony"
+      ],
       "url": "https://www.groupe-saintchristophe-lorraine.com/",
       "year": "2019",
       "preview": "Refonte du site de la concession Groupe Saint Christophe près de Nancy.",
@@ -92,7 +113,10 @@
       "id": 7,
       "title": "Krav maga Luxembourg",
       "image": "krav-maga-luxemborg.png",
-      "tags": ["Intégration", "Développement Symfony"],
+      "tags": [
+        "Intégration",
+        "Développement Symfony"
+      ],
       "url": "https://www.kravmagaluxembourg.com/",
       "year": "2019",
       "preview": "Refonte du site de l'association Krav Maga Luxembourg.",
@@ -102,7 +126,10 @@
       "id": 6,
       "title": "Inter entreprises services",
       "image": "ies.png",
-      "tags": ["Intégration", "Développement Symfony"],
+      "tags": [
+        "Intégration",
+        "Développement Symfony"
+      ],
       "url": "https://inter-entreprises-services.fr/",
       "year": "2019",
       "preview": "Refonte du site de IES qui propose un accompagnement social en entreprise. Ajout d'un extranet pour les employés de IES.",
@@ -112,7 +139,9 @@
       "id": 5,
       "title": "Airstrip",
       "image": "airstrip.png",
-      "tags": ["Intégration"],
+      "tags": [
+        "Intégration"
+      ],
       "url": "http://airstrip.events/",
       "year": "2019",
       "preview": "Création d'un site qui regroupe des évènements de tout types (concerts, clubbing, sports et loisirs).",
@@ -122,7 +151,9 @@
       "id": 4,
       "title": "GST",
       "image": "gst.png",
-      "tags": ["Développement Symfony"],
+      "tags": [
+        "Développement Symfony"
+      ],
       "url": "https://www.gstparis.fr/",
       "year": "2018",
       "preview": "Création d'un site de de gestion de déstockage en multilingue (FR et EN).",
@@ -132,7 +163,10 @@
       "id": 3,
       "title": "Spectacle Rémi Larrousse",
       "image": "remi-larrousse.png",
-      "tags": ["Intégration", "Développement Symfony"],
+      "tags": [
+        "Intégration",
+        "Développement Symfony"
+      ],
       "url": "https://spectacle.remilarrousse.fr/",
       "year": "2018",
       "preview": "Refonte du site d'un conférencier mentaliste et illusionniste, Rémi Larrousse.",
@@ -142,7 +176,9 @@
       "id": 2,
       "title": "Krav maga Thionville",
       "image": "kmtc57.png",
-      "tags": ["Intégration"],
+      "tags": [
+        "Intégration"
+      ],
       "url": "https://kmct57.com/",
       "year": "2018",
       "preview": "Refonte du site de l'association Krav Maga Thionville.",
@@ -152,7 +188,9 @@
       "id": 1,
       "title": "Circuit chenevières",
       "image": "circuit-chenevières.png",
-      "tags": ["Intégration"],
+      "tags": [
+        "Intégration"
+      ],
       "url": "https://www.circuit-chenevieres.fr/",
       "year": "2018",
       "preview": "Création du site vitrine du Circuit de Chenevières en complément de la boutique en ligne.",
