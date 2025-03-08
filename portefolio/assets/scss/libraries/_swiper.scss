@@ -1,0 +1,9 @@
+.swiper {
+  overflow: hidden;
+  border-radius: $border-radius;
+
+  .swiper-slide {
+    width: 100%;
+    height: 350px;
+  }
+}

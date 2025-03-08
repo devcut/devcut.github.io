@@ -1,4 +1,9 @@
 //=====================================================
+//  Border
+//=====================================================
+$border-radius: 5px !default;
+
+//=====================================================
 //  Animations
 //=====================================================
 $duration: 0.3s;
@@ -31,9 +36,9 @@ $wrapper-size-large: 1500px;
 //  Colors
 //=====================================================
 // Categories
-$color-primary: #3087ff;
-$color-secondary: #ffbf34;
-$color-btn-dark: #494953;
+$color-primary: #3087ff !default;
+$color-secondary: #ffbf34 !default;
+$color-btn-dark: #494953 !default;
 
 // Basics
 $color-black-text: #494953;
@@ -43,6 +48,34 @@ $color-grey: #d0d0d0;
 $color-grey-middle: darken($color-grey, 10%);
 $color-grey-light: #f9f8f8;
 $color-grey-dark: darken($color-grey, 15%);
+
+$button-border-radius: $border-radius !default;
+$button-primary-bg: $color-white !default;
+$button-primary-bg-hover: darken($color-white, 7%) !default;
+$button-primary-color: $color-primary !default;
+$button-primary-color-hover: $color-primary !default;
+$button-secondary-bg: $color-primary !default;
+$button-secondary-bg-hover: darken($color-primary, 7%) !default;
+$button-secondary-color: $color-white !default;
+$button-secondary-color-hover: $color-white !default;
+
+$button-disabled-color: #a3a3a3 !default;
+$button-disabled-bg: #ebebeb !default;
+
+$buttons: (
+        'primary': (
+                'color': $button-primary-color,
+                'bg': $button-primary-bg,
+                'color-hover': $button-primary-color-hover,
+                'bg-hover': $button-primary-bg-hover
+        ),
+        'secondary': (
+                'color': $button-secondary-color,
+                'bg': $button-secondary-bg,
+                'color-hover': $button-secondary-color-hover,
+                'bg-hover': $button-secondary-bg-hover
+        ),
+);
 
 //=====================================================
 //  Fonts

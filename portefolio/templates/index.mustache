@@ -22,40 +22,10 @@
         <div class="wrapper-large">
             <h2>Mes réalisations <span>(une partie seulement)</span></h2>
             <div class="wrapper-small-no-pad">
-                <p>Les projets que j'ai pu réaliser sont principalement des sites Internet pour d'autres entreprises. Néanmoins j'ai pu concevoir des API, des intranets et extranets. Mais ça je ne peux pas vous en parler ici 🤭.</p>
+                <p>J'ai principalement réalisé des <b>sites Internet</b> pour des entreprises, mais j'ai aussi conçu des <b>API</b>, des <b>intranets</b> et des <b>extranets</b>… même si certains projets restent confidentiels 🤭.</p>
             </div>
 
-            <ul class="list-project">
-                {{#projects}}
-                    {{#enabled}}
-                        <li>
-                            <div class="project">
-                                <div class="project-image-container">
-                                    <a href="{{url}}" target="_blank" class="project-image" style="background-image: url('./public/images/{{image}}')"></a>
-                                </div>
-
-                                <div class="project-content">
-                                    <h3>{{title}} <span>({{year}})</span></h3>
-                                    <ul class="list-tag">
-                                        {{#tags}}
-                                            <li>{{.}}</li>
-                                        {{/tags}}
-                                    </ul>
-                                    {{#preview}}
-                                        <p class="project-content-preview">{{{preview}}}</p>
-                                    {{/preview}}
-                                    {{#content}}
-                                        <div id="project-content-{{id}}" class="modal">
-                                            {{{content}}}
-                                        </div>
-                                        <a class="btn-primary open-modal" href="#project-content-{{id}}">En lire plus</a>
-                                    {{/content}}
-                                </div>
-                            </div>
-                        </li>
-                    {{/enabled}}
-                {{/projects}}
-            </ul>
+            {{>projects}}
         </div>
     </main>
 

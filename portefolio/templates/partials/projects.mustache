@@ -1,0 +1,70 @@
+<ul class="list-project">
+    {{#projects}}
+        {{#enabled}}
+            <li>
+                <div class="project">
+                    <div class="project-image-container">
+                        {{#url}}
+                            <a href="{{url}}" target="_blank" class="project-image" style="background-image: url('./public/images/{{image}}')"></a>
+                        {{/url}}
+                        {{^url}}
+                            <span class="project-image" style="background-image: url('./public/images/{{image}}')"></span>
+                        {{/url}}
+                    </div>
+
+                    <div class="project-content">
+                        <h3>{{title}} <span>({{year}})</span></h3>
+                        <ul class="list-tag">
+                            {{#tags}}
+                                <li>{{.}}</li>
+                            {{/tags}}
+                        </ul>
+                        {{#preview}}
+                            <p class="project-content-preview">{{{preview}}}</p>
+                        {{/preview}}
+                        {{#content}}
+                            <div id="project-content-{{id}}" class="modal">
+                                <div class="swiper mb-20">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <img src="./public/images/{{image}}" alt="">
+                                        </div>
+                                        {{#image_gallery}}
+                                            <div class="swiper-slide"><img src="./public/images/{{.}}" alt=""></div>
+                                        {{/image_gallery}}
+                                    </div>
+                                    <div class="swiper-button-prev"></div>
+                                    <div class="swiper-button-next"></div>
+                                </div>
+                                <div class="mb-10">
+                                    <ul class="list-tag">
+                                        {{#tags}}
+                                            <li>{{.}}</li>
+                                        {{/tags}}
+                                    </ul>
+                                </div>
+                                <p>
+                                    {{{content}}}
+                                </p>
+                                <div class="btn-group">
+                                    <a class="btn-secondary" target="_blank" href="{{url}}">Visiter le site</a>
+                                </div>
+                            </div>
+                            <div class="btn-group">
+                                {{#url}}
+                                    <a class="btn-secondary" target="_blank" href="{{url}}">Visiter le site</a>
+                                {{/url}}
+                                <a class="btn-primary open-modal" href="#project-content-{{id}}">En lire plus</a>
+                            </div>
+                        {{/content}}
+                        {{^content}}
+                            {{#url}}
+                                <a class="btn-secondary" target="_blank" href="{{url}}">Visiter le site</a>
+                            {{/url}}
+                        {{/content}}
+                    </div>
+                </div>
+            </li>
+        {{/enabled}}
+    {{/projects}}
+</ul>

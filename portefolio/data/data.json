@@ -18,7 +18,7 @@
     {
       "icon": "fas fa-code-branch",
       "link": "https://github.com/fluffy-factory",
-      "enabled": true
+      "enabled": false
     },
     {
       "icon": "fas fa-user-tie",
@@ -28,9 +28,33 @@
   ],
   "projects": [
     {
+      "id": 15,
+      "title": "MG Brunch",
+      "image": "mg-brunch/mg-brunch.png",
+      "image_gallery": [
+        "mg-brunch/mg-brunch-1.png",
+        "mg-brunch/mg-brunch-2.png"
+      ],
+      "tags": [
+        "Intégration",
+        "Développement Symfony",
+        "Administration (EasyAdmin)",
+        "API",
+        "Stripe",
+        "E-Commerce",
+        "Serveur"
+      ],
+      "url": "https://mg-brunch.com",
+      "year": "2024 - 2025",
+      "preview": "Développement du site e-commerce sous Symfony 6 + EasyAdmin, intégration de paiements via Stripe ...",
+      "content": "Développement du site e-commerce sous Symfony 6 + EasyAdmin, intégration de paiements via Stripe, gestion des commandes et des promotions via des bundles personnalisés (PromotionCodeBundle, ProductBundle, StripeBundle, E-commerceBundle) et optimisation SEO et mise en place d’une stratégie de communication sur les réseaux sociaux",
+      "enabled": true
+    },
+    {
       "id": 14,
       "title": "Luxapps",
-      "image": "luxapps.png",
+      "image": "luxapps/luxapps.png",
+      "image_gallery": null,
       "tags": [
         "Intégration",
         "Développement Symfony",
@@ -46,37 +70,42 @@
     {
       "id": 13,
       "title": "Chapier.lu",
-      "image": "chapier.png",
+      "image": "chapier/chapier.png",
+      "image_gallery": null,
       "tags": [
         "Intégration",
         "Développement Symfony",
+        "Administration (EasyAdmin)",
         "API",
         "Serveur"
       ],
       "url": "https://chapier.lu",
-      "year": "2022",
+      "year": "2022 - 2023",
       "preview": "Refonte du site internet <b>chapier.lu</b> avec une nouvelle charge graphique, basé sous Symfony avec l'ajout de nouvelles fonctionnalités.",
-      "content": "Refonte du site internet Chapier.lu qui était présent depuis plus de 12 ans, développé from scratch par le développeur me précédent.<br>Après réflexion et rédaction du cahier des charges, nous sommes parti sur Symfony avec l'utilisation du bundle EasyAdmin pour l'administration. Nous avons loué et configuré un serveur Linux basé au Luxembourg suite à la demande de nos clients.",
+      "content": "Refonte du site internet Chapier.lu qui était présent depuis plus de 12 ans, développé from scratch par le développeur me précédent.<br>Après réflexion et rédaction du cahier des charges, nous sommes parti sur Symfony 6 avec l'utilisation du bundle EasyAdmin pour l'administration. Nous avons loué et configuré un serveur Linux basé au Luxembourg suite à la demande de nos clients.",
       "enabled": true
     },
     {
       "id": 12,
       "title": "Chapier tools",
-      "image": "tools.png",
+      "image": "chapier-tools/chapier-tools.png",
+      "image_gallery": null,
       "tags": [
         "Intégration",
         "Développement Symfony",
+        "Administration (EasyAdmin)",
         "API"
       ],
-      "url": "#",
-      "year": "2020",
+      "year": "2020 - 2023",
       "preview": "Création d'un outil d'analyse de données provenant de l'ERP PICK pour <b>les commerciaux</b>, <b>les assistants</b> et <b>la direction</b> de la société Chapier (ainsi que pour nous, les développeurs).",
+      "content": "Création d'un outil d'analyse de données provenant de l'ERP PICK pour <b>les commerciaux</b>, <b>les assistants</b> et <b>la direction</b> de la société Chapier (ainsi que pour nous, les développeurs). Développé avec <b>Symfony 6</b> et intégré avec <b>EasyAdmin</b>.",
       "enabled": true
     },
     {
       "id": 11,
       "title": "Sally",
-      "image": "sally.png",
+      "image": "sally/sally.png",
+      "image_gallery": null,
       "tags": [
         "Intégration",
         "Développement Symfony"
@@ -84,12 +113,14 @@
       "url": "https://chant-jazz.lu/",
       "year": "2019",
       "preview": "Création d'un site vitrine pour une professeure de chant.",
+      "content": "Création d'un site vitrine pour une professeure de chant. Développé avec <b>Symfony 5</b> et intégré avec <b>EasyAdmin</b>.",
       "enabled": true
     },
     {
       "id": 10,
       "title": "REO",
-      "image": "reo.png",
+      "image": "reo/reo.png",
+      "image_gallery": null,
       "tags": [
         "Intégration",
         "Développement Symfony"
@@ -97,119 +128,156 @@
       "url": "https://reo.lu/",
       "year": "2019",
       "preview": "Création d'un site pour s'inscrire à des conférences réalisé par Telindus Luxembourg.",
+      "content": "Création d'un site pour s'inscrire à des conférences réalisé par Telindus Luxembourg. Développé avec <b>Symfony 5</b> et intégré avec <b>EasyAdmin</b>.",
       "enabled": true
     },
     {
       "id": 9,
       "title": "Les tendances et vous",
-      "image": "les-tendances-et-vous.png",
+      "image": "les-tendances-et-vous/les-tendances-et-vous.png",
+      "image_gallery": null,
       "tags": [
         "Intégration",
-        "Développement Symfony"
+        "Développement Symfony",
+        "Administration (EasyAdmin)"
       ],
       "url": "https://www.lestendancesetvous.fr/",
       "year": "2019",
       "preview": "Création d'un site de mode dirigé par le groupe E.leclerc.",
+      "content": "Création d'un site de mode dirigé par le groupe E.leclerc. Développé avec <b>Symfony 5</b> et intégré avec <b>EasyAdmin</b>.",
       "enabled": true
     },
     {
       "id": 8,
       "title": "Groupe saint christophe",
-      "image": "groupe-saint-christophe.png",
+      "image": "groupe-saint-christophe/groupe-saint-christophe.png",
+      "image_gallery": null,
       "tags": [
         "Intégration",
-        "Développement Symfony"
+        "Développement Symfony",
+        "Administration (EasyAdmin)"
       ],
       "url": "https://www.groupe-saintchristophe-lorraine.com/",
       "year": "2019",
       "preview": "Refonte du site de la concession Groupe Saint Christophe près de Nancy.",
+      "content": "Refonte du site de la concession Groupe Saint Christophe près de Nancy. Développé avec <b>Symfony 5</b> et intégré avec <b>EasyAdmin</b>.",
       "enabled": true
     },
     {
       "id": 7,
       "title": "Krav maga Luxembourg",
-      "image": "krav-maga-luxemborg.png",
+      "image": "krav-maga-luxembourg/krav-maga-luxembourg.png",
+      "image_gallery": null,
       "tags": [
         "Intégration",
-        "Développement Symfony"
+        "Développement Symfony",
+        "Administration (EasyAdmin)"
       ],
       "url": "https://www.kravmagaluxembourg.com/",
       "year": "2019",
       "preview": "Refonte du site de l'association Krav Maga Luxembourg.",
+      "content": "Refonte du site de l'association Krav Maga Luxembourg. Développé avec <b>Symfony 5</b> et intégré avec <b>EasyAdmin</b>.",
       "enabled": true
     },
     {
       "id": 6,
       "title": "Inter entreprises services",
-      "image": "ies.png",
+      "image": "ies/ies.png",
+      "image_gallery": null,
       "tags": [
         "Intégration",
-        "Développement Symfony"
+        "Développement Symfony",
+        "Administration (EasyAdmin)"
       ],
       "url": "https://inter-entreprises-services.fr/",
       "year": "2019",
       "preview": "Refonte du site de IES qui propose un accompagnement social en entreprise. Ajout d'un extranet pour les employés de IES.",
+      "content": "Refonte du site de IES qui propose un accompagnement social en entreprise. Ajout d'un extranet pour les employés de IES. Développé avec <b>Symfony 5</b> et intégré avec <b>EasyAdmin</b>.",
       "enabled": true
     },
     {
       "id": 5,
       "title": "Airstrip",
-      "image": "airstrip.png",
+      "image": "airstrip/airstrip.png",
+      "image_gallery": null,
       "tags": [
-        "Intégration"
+        "Intégration",
+        "Développement Symfony",
+        "Administration (EasyAdmin)"
       ],
       "url": "http://airstrip.events/",
       "year": "2019",
       "preview": "Création d'un site qui regroupe des évènements de tout types (concerts, clubbing, sports et loisirs).",
+      "content": "Création d'un site qui regroupe des évènements de tout types (concerts, clubbing, sports et loisirs). Développé avec <b>Symfony 5</b> et intégré avec <b>EasyAdmin</b>.",
       "enabled": true
     },
     {
       "id": 4,
       "title": "GST",
-      "image": "gst.png",
+      "image": "gst/gst.png",
+      "image_gallery": null,
       "tags": [
-        "Développement Symfony"
+        "Intégration",
+        "Développement Symfony",
+        "Administration (EasyAdmin)"
       ],
       "url": "https://www.gstparis.fr/",
       "year": "2018",
-      "preview": "Création d'un site de de gestion de déstockage en multilingue (FR et EN).",
+      "preview": "Création d'un site de de gestion de déstockage en multilingue.",
+      "content": "Création d'un site de de gestion de déstockage en multilingue. Développé avec <b>Symfony 4</b> et intégré avec <b>EasyAdmin</b>.",
       "enabled": true
     },
     {
       "id": 3,
       "title": "Spectacle Rémi Larrousse",
-      "image": "remi-larrousse.png",
+      "image": "remi-larrousse/remi-larrousse.png",
+      "image_gallery": null,
       "tags": [
         "Intégration",
-        "Développement Symfony"
+        "Développement Symfony",
+        "Administration (EasyAdmin)"
       ],
       "url": "https://spectacle.remilarrousse.fr/",
       "year": "2018",
       "preview": "Refonte du site d'un conférencier mentaliste et illusionniste, Rémi Larrousse.",
+      "content": "Refonte du site d'un conférencier mentaliste et illusionniste, Rémi Larrousse. Développé avec <b>Symfony 4</b> et intégré avec <b>EasyAdmin</b>.",
       "enabled": true
     },
     {
       "id": 2,
       "title": "Krav maga Thionville",
-      "image": "kmtc57.png",
+      "image": "kmtc57/kmtc57.png",
+      "image_gallery": [
+        "kmtc57/kmtc57-1.png"
+      ],
       "tags": [
-        "Intégration"
+        "Intégration",
+        "Développement Symfony",
+        "Administration (EasyAdmin)"
       ],
       "url": "https://kmct57.com/",
       "year": "2018",
-      "preview": "Refonte du site de l'association Krav Maga Thionville.",
+      "preview": "Refonte du site de l'association Krav Maga Thionville pour <b>moderniser son design</b>, <b>améliorer l'expérience utilisateur</b> et <b>faciliter la gestion du contenu</b>.",
+      "content": "Refonte du site de l'association Krav Maga Thionville pour <b>moderniser son design</b>, <b>améliorer l'expérience utilisateur</b> et <b>faciliter la gestion du contenu</b>. Développé avec <b>Symfony 4</b> et intégré avec <b>EasyAdmin</b>.",
       "enabled": true
     },
     {
       "id": 1,
       "title": "Circuit chenevières",
-      "image": "circuit-chenevières.png",
+      "image": "circuit-chenevieres/circuit-chenevieres-1.png",
+      "image_gallery": [
+        "circuit-chenevieres/circuit-chenevieres-2.png",
+        "circuit-chenevieres/circuit-chenevieres-3.png"
+      ],
       "tags": [
-        "Intégration"
+        "Intégration",
+        "Développement Symfony",
+        "Administration (EasyAdmin)"
       ],
       "url": "https://www.circuit-chenevieres.fr/",
       "year": "2018",
-      "preview": "Création du site vitrine du Circuit de Chenevières en complément de la boutique en ligne.",
+      "preview": "Création du <b>site vitrine du Circuit de Chenevières</b> en complément de la boutique en ligne.",
+      "content": "Création du <b>site vitrine du Circuit de Chenevières</b> en complément de la boutique en ligne. Ce site présente l'ensemble des activités proposées par le circuit. Développé avec <b>Symfony 4</b> et intégré avec <b>EasyAdmin</b>, il permet au client de <b>gérer facilement son contenu</b> via une interface d'administration intuitive.",
       "enabled": true
     }
   ]

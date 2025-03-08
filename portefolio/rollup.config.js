@@ -13,7 +13,6 @@ export default [
         input: inputFolder + 'js/app.js',
         output: {
             file: outputFolder + 'js/' + fileName + '.min.js',
-            format: 'umd',
             name: name
         },
         plugins: [

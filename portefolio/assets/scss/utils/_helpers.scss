@@ -1,7 +1,7 @@
 /*
   Mettre les valeurs dans le fichier _variables.scss
 */
-$spaces: (0, 10, 20, 30, 40, 50);
+$spaces: (0, 10, 15, 20, 30, 40, 50);
 $negativeSpaces: (-10, -20, -30, -40, 50);
 $textSizes: (('', $font-size-base), ('small', $font-size-small), ('medium', $font-size-middle), ('large', $font-size-big));
 $breakpoints: (('s', $screen-s), ('m', $screen-m), ('l', $screen-l));

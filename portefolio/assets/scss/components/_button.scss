@@ -1,7 +1,115 @@
-.btn-primary {
+@mixin button-style($type) {
+  $color: map-get($type, 'color');
+  $bg: map-get($type, 'bg');
+  $color-hover: map-get($type, 'color-hover');
+  $bg-hover: map-get($type, 'bg-hover');
+
+  color: $color;
+  background-color: $bg;
+
+  &:hover, &:active, &:focus {
+    color: $color-hover !important;
+    background-color: $bg-hover;
+    box-shadow: 0 0 10px rgba($bg, 0.5);
+  }
+
+  &:disabled {
+    color: $button-disabled-color;
+    background-color: $button-disabled-bg;
+  }
+
+  .icon {
+    margin-right: 5px;
+  }
+}
+
+// Styles de base des boutons
+%btn-base {
+  position: relative;
+  z-index: 1;
   display: inline-block;
-  color: $color-primary;
-  background-color: white;
-  padding: 8px 15px;
-  border-radius: 5px;
+  padding: 10px 30px;
+  font-size: $font-size-middle-small;
+  text-transform: none;
+  text-align: center;
+  text-decoration: none;
+  border: 0;
+  border-radius: $button-border-radius;
+  cursor: pointer;
+  transition: color $duration ease, background-color $duration ease, box-shadow $duration ease;
+
+  &:hover {
+    text-decoration: none;
+  }
+
+  &.btn-block {
+    display: block;
+  }
+
+  &.btn-full-width {
+    width: 100%;
+  }
+}
+
+@each $btn-type, $btn-values in $buttons {
+  .btn-#{$btn-type} {
+    @extend %btn-base;
+    @include button-style($btn-values);
+  }
+
+  .btn-sm-#{$btn-type} {
+    @extend .btn-#{$btn-type};
+    padding: 8px 20px;
+  }
+
+  .btn-xs-#{$btn-type} {
+    @extend .btn-#{$btn-type};
+    font-size: $font-size-small;
+    padding: 5px 15px;
+  }
+
+  .btn-#{$btn-type}-icon {
+    @extend .btn-#{$btn-type};
+
+    .icon {
+      margin-right: 0;
+    }
+  }
+
+  .btn-sm-#{$btn-type}-icon {
+    @extend .btn-sm-#{$btn-type};
+
+    .icon {
+      margin-right: 0;
+    }
+  }
+
+  .btn-xs-#{$btn-type}-icon {
+    @extend .btn-xs-#{$btn-type};
+
+    .icon {
+      margin-right: 0;
+    }
+  }
+}
+
+.btn-group {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: -5px;
+  justify-content: center;
+
+  & > * {
+    margin: 5px;
+    flex-grow: 1;
+  }
+
+  &.btn-group-50 {
+    & > * {
+      flex-grow: inherit;
+      max-width: calc(50% - 10px);
+      flex-basis: calc(50% - 10px);
+    }
+  }
 }
