@@ -28,6 +28,26 @@
   ],
   "projects": [
     {
+      "id": 16,
+      "title": "Trackdaycore",
+      "image": "trackdaycore/trackdaycore.png",
+      "image_gallery": [
+        "trackdaycore/trackdaycore-1.png"
+      ],
+      "tags": [
+        "Intégration",
+        "Développement Symfony",
+        "Administration (EasyAdmin)",
+        "API",
+        "Serveur"
+      ],
+      "url": "https://trackdaycore.com",
+      "year": "2026",
+      "preview": "Plateforme de gestion de journées circuit automobile avec inscription en ligne et suivi des participants.",
+      "content": "Développement d'une plateforme complète de gestion de track days (journées circuit) sous Symfony 6 + EasyAdmin. Intégration de paiements en ligne, gestion des inscriptions et des participants, système de gestion des sessions et des créneaux horaires, interface d'administration pour les organisateurs et tableau de bord pour les participants.",
+      "enabled": true
+    },
+    {
       "id": 15,
       "title": "MG Brunch",
       "image": "mg-brunch/mg-brunch.png",

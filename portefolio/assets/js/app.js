@@ -1,9 +1,12 @@
 import '../scss/app.scss';
-import 'jquery';
+import $ from 'jquery';
+window.$ = window.jQuery = $;
 import InteractiveBoard from 'interactive-board';
 import 'jquery-modal';
 import Swiper from 'swiper';
-import { Navigation, Pagination } from 'swiper/modules';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import { Navigation } from 'swiper/modules';
 
 $('a.open-modal').click(function() {
     $(this).modal({
@@ -12,7 +15,7 @@ $('a.open-modal').click(function() {
 
     $('.swiper').each(function () {
         new Swiper($(this).get(0), {
-            modules: [Navigation, Pagination],
+            modules: [Navigation],
             autoHeight: true,
             slidesPerView: 1,
             navigation: {
